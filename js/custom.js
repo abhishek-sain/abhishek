@@ -53,8 +53,6 @@ $(function () {
 
 // typing();
 
-
-
 /**
  * Animation on scroll function and init
  */
@@ -67,3 +65,43 @@ function aosInit() {
   });
 }
 window.addEventListener("load", aosInit);
+
+document.addEventListener("DOMContentLoaded", function () {
+  (function () {
+    emailjs.init({
+      publicKey: "WC0OMRj9YPZb6iZQu",
+    });
+  })();
+});
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let form = document.getElementById("contact-form");
+  let userData = {
+    name: document.querySelector("input[placeholder='Name']").value,
+    email: document.querySelector("input[placeholder='Email']").value,
+    email: document.querySelector("input[placeholder='Mobile']").value,
+    subject: document.querySelector("input[placeholder='Subject']").value,
+    message: document.querySelector("textarea[placeholder='Message']").value,
+  };
+
+  emailjs.send("service_vt112b4", "template_lhs56re", userData)
+    .then((response) => {
+      Swal.fire({
+        icon: "success",
+        title: "Success!",
+        text: "Email Sent Successfully ✅",
+      });
+
+      form.reset(); 
+    })
+    .catch((error) => {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Email Sending Failed ❌",
+      });
+      console.error(error);
+    });
+});
