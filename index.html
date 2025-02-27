@@ -79,7 +79,11 @@
     <!-- end navigation -->
     <!-- start home -->
     <section id="home">
-      <div class="overlay">
+      <video autoplay muted loop id="bg-video">
+        <source src="images/home-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <!-- <div class="overlay">
         <div class="container">
           <div class="row">
             <div class="col-md-1"></div>
@@ -104,8 +108,9 @@
             <div class="col-md-1"></div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
+
     <!-- end home -->
 
     <!-- start about -->
@@ -370,20 +375,7 @@
               class="img-responsive"
               alt="about img"
             />
-            <!-- <h2 class="text-uppercase">More of Your Software</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p>
-              <span><i class="fa fa-mobile"></i></span>Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p>
-              <i class="fa fa-code"></i>Quis autem velis reprehenderit et quis
-              voluptate velit esse quam.
-            </p> -->
+          
           </div>
         </div>
         <div class="row">
@@ -442,7 +434,7 @@
               alt="about img"
             />
           </div>
-          <div
+          <!-- <div
             class="col-md-6"
             data-aos="fade-left"
             data-aos-duration="1000"
@@ -454,21 +446,7 @@
               class="img-responsive"
               alt="about img"
             />
-            <!-- <h2 class="text-uppercase">More of Your Software</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p>
-              <span><i class="fa fa-mobile"></i></span>Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p>
-              <i class="fa fa-code"></i>Quis autem velis reprehenderit et quis
-              voluptate velit esse quam.
-            </p> -->
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -570,7 +548,10 @@
               Download my resume to explore my skills, experience, and projects
               in detail.
             </p>
-            <a href="images/Abhishek_Sain_Resume.pdf" download="Abhishek_Sain_Resume.pdf">
+            <a
+              href="images/Abhishek_Sain_Resume.pdf"
+              download="Abhishek_Sain_Resume.pdf"
+            >
               <button class="btn btn-primary text-uppercase">
                 <i
                   class="bi bi-download"
@@ -599,7 +580,7 @@
     <!-- end download -->
 
     <!-- start contact -->
-    <section id="contact">
+    <!-- <section id="contact">
       <div class="overlay">
         <div class="container">
           <div class="row">
@@ -711,7 +692,142 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <section id="contact">
+      <video autoplay loop muted playsinline class="video-bg">
+        <source src="images/contact-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-out"
+            >
+              <h2 class="text-uppercase">Contact Me</h2>
+              <p>
+                Have a project in mind or want to collaborate? Feel free to
+                reach out!
+              </p>
+              <address>
+                <p>
+                  <i
+                    class="bi bi-geo-alt"
+                    style="color: white; font-size: 1em"
+                  ></i>
+                  <a
+                    href="https://maps.app.goo.gl/apFqurKXWnCHFoQUA"
+                    target="_blank"
+                    style="color: white; font-size: 1em"
+                    >Scheme No. 10 A, Alwar, Rajasthan, India</a
+                  >
+                </p>
+                <p>
+                  <i
+                    class="bi bi-telephone"
+                    style="color: white; font-size: 1em"
+                  ></i>
+                  <a
+                    href="https://wa.me/916367845520"
+                    target="_blank"
+                    style="color: white; font-size: 1em"
+                    >+91 6367845520</a
+                  >
+                </p>
+                <p>
+                  <i
+                    class="bi bi-envelope"
+                    style="color: white; font-size: 1em"
+                  ></i>
+                  <a
+                    href="mailto:abhisheksainsain91@gmail.com"
+                    style="color: white; font-size: 1em"
+                    >abhisheksainsain91@gmail.com</a
+                  >
+                </p>
+                <p>
+                  <i
+                    class="bi bi-linkedin"
+                    style="color: white; font-size: 1em"
+                  ></i>
+                  <a
+                    href="https://www.linkedin.com/in/abhishek-sain-8b5153233/"
+                    target="_blank"
+                    style="color: white; font-size: 1em"
+                    >LinkedIn</a
+                  >
+                </p>
+              </address>
+            </div>
+            <div
+              class="col-md-6"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="contact-form">
+                <form action="#" id="contact-form">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                      id="name"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Mobile"
+                      id="mobile"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      id="email"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject"
+                      id="subject"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <textarea
+                      class="form-control"
+                      placeholder="Message"
+                      rows="4"
+                      id="message"
+                    ></textarea>
+                  </div>
+                  <div class="col-md-8">
+                    <input
+                      type="submit"
+                      class="form-control text-uppercase"
+                      value="Send"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <!-- end contact -->
 
     <!-- start footer -->
@@ -745,16 +861,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "WC0OMRj9YPZb6iZQu",
-      });
-   })();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "WC0OMRj9YPZb6iZQu",
+        });
+      })();
+    </script>
   </body>
 </html>

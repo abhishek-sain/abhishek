@@ -168,7 +168,7 @@ img {
 /* end navigation */
 
 /* start home */
-#home {
+/* #home {
   background: url("../images/home.jpg") no-repeat center center/cover;
   background-attachment: fixed;
   background-size: cover;
@@ -185,7 +185,47 @@ img {
 #home img {
   display: inline-block;
   margin-top: 30px;
+} */
+#home {
+  position: relative;
+  color: #fff;
+  margin-top: 70px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5); /* Light dark overlay for better text visibility */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home p {
+  font-weight: 400;
+  font-style: italic;
+  line-height: 2em;
+}
+
+#home img {
+  display: inline-block;
+  margin-top: 30px;
+}
+
 /* end home */
 
 /* start divider */
@@ -322,7 +362,7 @@ img {
 /* end download */
 
 /* start contact */
-#contact {
+/* #contact {
   background: url("../images/still-life-books-versus-technology.jpg") no-repeat;
   background-size: cover;
   color: #fff;
@@ -364,7 +404,65 @@ img {
 }
 #contact input[type="submit"]:hover {
   background: #107db6;
+} */
+
+#contact {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  width: 100%;
 }
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5); /* Thoda dark effect dene ke liye */
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+}
+
+#contact h2 {
+  padding-bottom: 10px;
+}
+
+#contact address {
+  padding-top: 20px;
+}
+
+#contact .contact-form {
+  padding-top: 40px;
+}
+
+#contact input,
+#contact textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#contact input[type="submit"] {
+  background: #28a7e9;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+  background: #107db6;
+}
+
 /* end contact */
 
 /* start footer */
