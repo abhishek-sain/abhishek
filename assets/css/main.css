@@ -1978,3 +1978,17 @@ section,
 .fa{
   color: var(--accent-color);
 }
+
+
+#downloadBtn{
+  background-color: var(--heading-color);
+  border: none;
+  color: white;
+  padding: 10px 45px;
+  border-radius: 10px;
+}
+button[type="submit"]{
+  background-color: var(--heading-color);
+  border: none;
+  color: white;
+}
