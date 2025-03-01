@@ -1987,3 +1987,15 @@ section,
   padding: 10px 45px;
   border-radius: 10px;
 }
+
+#submitBtn{
+  background-color: var(--heading-color);
+  border: none;
+  color: white;
+  padding: 10px 45px;
+  border-radius: 10px;
+}
+#submitBtn:hover{
+  /* background-color: var(--heading-color); */
+  background-color: #cd4070;
+}
