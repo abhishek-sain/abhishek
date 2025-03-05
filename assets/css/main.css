@@ -1999,3 +1999,6 @@ section,
   /* background-color: var(--heading-color); */
   background-color: #cd4070;
 }
+.workImages{
+  width: 100%;
+}
