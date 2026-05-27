@@ -1,0 +1,26 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nameGradient" x1="16" y1="50" x2="1010" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.38" stop-color="#5EEAD4"/>
+      <stop offset="0.7" stop-color="#FDE68A"/>
+      <stop offset="1" stop-color="#FB7185"/>
+    </linearGradient>
+    <linearGradient id="lineGradient" x1="28" y1="236" x2="1018" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="0.48" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20" y="-30" width="1240" height="340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#38BDF8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <g filter="url(#softGlow)">
+    <text x="30" y="166" fill="url(#nameGradient)" font-family="Inter, Avenir Next, Arial, sans-serif" font-size="132" font-weight="900" letter-spacing="0">Abhishek Sain</text>
+    <rect x="38" y="212" width="676" height="10" rx="5" fill="url(#lineGradient)"/>
+    <text x="736" y="223" fill="#94A3B8" font-family="Inter, Avenir Next, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="1.5">SOFTWARE DEVELOPER</text>
+  </g>
+  <path d="M1040 72L1053 103L1086 106L1061 127L1069 160L1040 143L1011 160L1019 127L994 106L1027 103L1040 72Z" fill="#38BDF8" opacity="0.9"/>
+  <path d="M1110 142L1118 161L1138 163L1123 176L1128 196L1110 185L1092 196L1097 176L1082 163L1102 161L1110 142Z" fill="#F59E0B" opacity="0.9"/>
+  <path d="M980 172L987 188L1004 190L991 201L995 218L980 209L965 218L969 201L956 190L973 188L980 172Z" fill="#14B8A6" opacity="0.9"/>
+</svg>
